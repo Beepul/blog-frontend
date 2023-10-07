@@ -1,0 +1,21 @@
+.posts{
+    /* flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex: 1; */
+    /* width: 70%; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 72px;
+}
+
+
+
+@media screen and (min-width:992px) {
+    .posts{
+        grid-template-columns: repeat(2,1fr);
+    }   
+}

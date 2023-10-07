@@ -16,7 +16,7 @@ export default function SinglePost() {
 
   useEffect(()=>{
     const fetchPost = async () => {
-      const res = await axios.get(`https:blog-api.onrender.com/api/post/${id}`);
+      const res = await axios.get(`https://blog-api-o6f8.onrender.com/api/post/${id}`);
       setPost(res.data.post)
       setTitle(res.data.post.title)
       setDesc(res.data.post.description)
@@ -27,7 +27,7 @@ export default function SinglePost() {
 
   const handleDelete = async  () => {
     try {
-      const res = await axios.delete(`https:blog-api.onrender.com/api/post/delete/${id}`,{
+      const res = await axios.delete(`https://blog-api-o6f8.onrender.com/api/post/delete/${id}`,{
         headers:{
           'Content-Type': 'application/json',
           Authorization: `Bearer ${user.accessToken}`
@@ -42,7 +42,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      const res = await axios.put(`https:blog-api.onrender.com/api/post/update/${id}`,{title:title,description:desc},{
+      const res = await axios.put(`https://blog-api-o6f8.onrender.com/api/post/update/${id}`,{title:title,description:desc},{
         headers:{
           'Content-Type': 'application/json',
           Authorization: `Bearer ${user.accessToken}`

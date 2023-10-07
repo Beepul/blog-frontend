@@ -31,7 +31,7 @@ export default function Settings() {
     setSucess(false)
     
     try {
-      const res = await axios.put(`https:blog-api.onrender.com/api/user/update/${user.uid}`,formData,{
+      const res = await axios.put(`https://blog-api-o6f8.onrender.com/api/user/update/${user.uid}`,formData,{
         headers:{
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${user.accessToken}`

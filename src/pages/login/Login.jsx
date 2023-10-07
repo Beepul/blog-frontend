@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
     dispatch({type:"LOGIN_START"});
     try {
-      const res = await axios.post('https:blog-api.onrender.com/api/auth/login',{
+      const res = await axios.post('https://blog-api-o6f8.onrender.com/api/auth/login',{
         email: emailRef.current.value,
         password: passRef.current.value
       })

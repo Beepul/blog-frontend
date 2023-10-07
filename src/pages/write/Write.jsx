@@ -17,7 +17,7 @@ export default function Write() {
     formData.append('thumbnail',file)
     // console.log("formData",formData)
     try {
-      const res = await axios.post('https:blog-api.onrender.com/api/post/create',formData,{
+      const res = await axios.post('https://blog-api-o6f8.onrender.com/api/post/create',formData,{
         headers:{
           'Content-Type': 'multipart/form-data',
           Authorization:  `Bearer ${user.accessToken}`

@@ -11,7 +11,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     const fetchCategores = async () => {
-      const res = await axios.get('https:blog-api.onrender.com/api/category/');
+      const res = await axios.get('https://blog-api-o6f8.onrender.com/api/category/');
       setCategories(res.data.categories)
     }
     fetchCategores();

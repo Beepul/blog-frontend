@@ -12,7 +12,7 @@ export default function Homepage() {
   
   useEffect(() =>{
     const fetchPosts = async () => {
-      const res = await axios.get("https:blog-api.onrender.com/api/post/" + search);
+      const res = await axios.get("https://blog-api-o6f8.onrender.com/api/post/" + search);
       setPosts(res.data.posts)
     }
     fetchPosts()
